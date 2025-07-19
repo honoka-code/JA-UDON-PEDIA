@@ -1,6 +1,7 @@
 body {
     background-image: url("images/washi.png");
     background-size: cover;
+    overflow-x: hidden;
   }
 
 section {
@@ -45,8 +46,7 @@ section {
 }
 
 .histories {
-  position: relative;
-
+ position: relative;
 }
 
 .histories h2{
@@ -57,63 +57,73 @@ section {
   font-style: normal;
 }
 
-.histories img{
+ .histories img{
   max-width:100%;
-}
-.history {
+ }
+
+ .history {
     position: relative;
- 
-  margin:0 auto;
-  padding:0 15px;
-}
+    margin:0 auto;
+ }
 
-    .history__item1 {
-      position: relative;
-      display: flex;
-      padding:  0 35px 20px;
-      text-align: right;
-      margin-left: 800px;
-    }
+ .history__items{
+  position: relative;
+  padding: 0;
+ }
 
-    .history__item2 {
-      position: relative;
-      display: flex;
-      padding: 0 0 35px 20px;
-      margin-left: 100px;
-    }
+ .history__item1 {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    .history__item3 {
-      position: relative;
-      display: flex;
-      padding: 0 0 35px 20px;
-      margin-left: 800px;
-    }
+ .history__item2 {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 500px;
+ }
 
-    .history__inner {
-      max-width: 450px;
-    }
+ .history__item3 {
+   display: flex;
+    justify-content: flex-end;
+  }
 
-    .history__iamge {
-      line-height: 1;
-      margin: 0;
-      padding: 0;
+ .history__inner {
+    width: 550px;
+  }
+
+ .history__iamge {
+   width: 100%;
+  }
+
+  .history__iamge2 {
+    width: 100%;
+   }
+
+ .histories img {
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(#1e1d1d, 0.33);
+    display: block;
+    width: 120%;
+    height: 120%;
     }
-      .histories img {
-        width: 150%;
-        height: 150%;
-        object-fit: cover;
-        box-shadow: 0 0 15px rgba(#1e1d1d, 0.33);
-        display: block;
-      }
   
     .history__text {
       padding-top: 10px;
       letter-spacing: 0.05em;
-       margin-top: 15px;
+      padding-top: 15px;
     }
 
-    .udon-tiltle{
-      
+    .history__text p{
+      width: 100%;
+    }
+
+ .udon-title{
+      font-size: 60px;
+      writing-mode: vertical-rl;
+      position: absolute;
+      top: 37%;
+      left: 45%;
     }
 
 
@@ -140,27 +150,60 @@ section {
 }
 
 .udon-area img{
-    width:500px;
-    height:500px;
+    width:450px;
+    height:450px;
     border-radius:50%;
     object-fit: cover;
 }
 
 .img1{
-  margin-left: 200px;
   position: relative;
 }
 
 .img2{
-  margin-left: 700px;
-  margin-top: -200px;
   position: absolute;
 }
 
 .img3{
-  margin-top: 400px;
-  margin-left: 150px;
   position: absolute;
+}
+
+.udon-area p{
+  padding-right: 765px;
+}
+
+.udon-area a{
+  font-size: 40px;
+}
+
+.miemie{
+  display: flex;
+  align-items: flex-end;
+  padding-left: 100px;
+}
+
+.osakaosaka{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  padding-right: 200px;
+  padding-top: -80px;
+}
+
+.osakaosaka img{
+ margin-right: 70px;
+}
+
+.kyotokyoto{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  padding-top: 350px;
+  padding-right: 520px;
+}
+
+.kyotokyoto img{
+  margin-right: 80px;
 }
 
 .udon-recomended {
@@ -176,6 +219,8 @@ section {
   font-family: "Snippet", sans-serif;
   font-weight: 1500;
   font-style: normal;
+  
+ 
 }
 
 .udon-recomended img{
@@ -183,4 +228,26 @@ section {
   height: 50%;
   object-fit: cover;
   margin-left: 100px;
+}
+
+.marugames{
+  display: flex;
+}
+
+.marugames h2{
+  font-size: 50px;
+  align-items: flex-end;
+}
+
+.marugame{
+  display: flex;
+}
+
+.marugame p{
+  font-size: 40px;
+  padding-left: 90px;
+}
+
+.marugame h2{
+  padding-top: -50px;
 }
